@@ -539,10 +539,10 @@ body {
     filter: drop-shadow(0 0 8px rgba(255,37,131,0.6));
 }
 
-.behance { background-image: url('RusnyakK_images/RusnyakK_behance-icon.png'); }
-.insta   { background-image: url('RusnyakK_images/RusnyakK_insta-icon.png'); }
-.telega  { background-image: url('RusnyakK_images/RusnyakK_telega-icon.png'); }
-.email   { background-image: url('RusnyakK_images/RusnyakK_email-icon.png'); }
+.behance { background-image: url('img/RusnyakK_images/RusnyakK_behance-icon.png'); }
+.insta   { background-image: url('img/RusnyakK_images/RusnyakK_insta-icon.png'); }
+.telega  { background-image: url('img/RusnyakK_images/RusnyakK_telega-icon.png'); }
+.email   { background-image: url('img/RusnyakK_images/RusnyakK_email-icon.png'); }
 
 /* ---------- ФУТЕР ---------- */
 .footer {

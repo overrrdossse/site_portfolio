@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Галерея — Эмилия Рожкова</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- НАВИГАЦИЯ -->
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="Emily_index.html">Обо мне</a>
+        <a href="Emily_gallery.html">Галерея</a>
+        <a href="Emily_services.html">Услуги</a>
+    </div>
+</nav>
+
+<!-- ЗАГОЛОВОК -->
+<section class="header center">
+    <div class="container">
+        <h1 class="title">Галерея работ</h1>
+    </div>
+</section>
+
+<!-- ФИЛЬТРЫ -->
+<section class="filters">
+    <div class="container filter-inner">
+        <button onclick="filterSelection('all')">ВСЕ</button>
+        <button onclick="filterSelection('paint')">ЖИВОПИСЬ</button>
+        <button onclick="filterSelection('draw')">ГРАФИКА</button>
+        <button onclick="filterSelection('design')">ДИЗАЙН</button>
+    </div>
+</section>
+
+<!-- ГАЛЕРЕЯ -->
+<section class="gallery">
+    <div class="container gallery-grid">
+
+        <!-- ЖИВОПИСЬ -->
+        <div class="gallery-item paint">
+            <div class="image-wrap">
+                <img src="img/emily/work4.jpg">
+            </div>
+            <p>Натюрморт</p>
+          <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <div class="gallery-item paint">
+            <div class="image-wrap">
+                <img src="img/emily/work5.jpg">
+            </div>
+            <p>Натюрморт с чайником</p>
+            <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <div class="gallery-item paint">
+            <div class="image-wrap">
+                <img src="img/emily/work6.jpg">
+            </div>
+            <p>Натюрморт</p>
+           <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <!-- ГРАФИКА -->
+        <div class="gallery-item draw">
+            <div class="image-wrap">
+                <img src="img/emily/work7.jpg">
+            </div>
+            <p>Карандашная графика</p>
+            <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <div class="gallery-item draw">
+            <div class="image-wrap">
+                <img src="img/emily/work8.jpg">
+            </div>
+            <p>Графика</p>
+           <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <div class="gallery-item draw">
+            <div class="image-wrap">
+                <img src="img/emily/work9.jpg">
+            </div>
+            <p>Графика</p>
+            <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <!-- ДИЗАЙН -->
+        <div class="gallery-item design">
+            <div class="image-wrap">
+                <img src="img/emily/work10.jpg">
+            </div>
+            <p>Дизайн упаковки</p>
+            <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <div class="gallery-item design">
+            <div class="image-wrap">
+                <img src="img/emily/work11.jpg">
+            </div>
+            <p>Дизайн упаковки</p>
+            <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+        <div class="gallery-item design">
+            <div class="image-wrap">
+                <img src="img/emily/work12.jpg">
+            </div>
+            <p>Дизайн упаковки</p>
+            <a href="services.html#form" class="btn small">Заказать похожее</a>
+        </div>
+
+    </div>
+</section>
+
+<!-- КНОПКА -->
+<section class="cta center">
+    <a href="services.html" class="btn big">Обсудить проект</a>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-line"></div>
+
+        <div class="footer-content">
+            <p>© 2025 Эмилия Рожкова</p>
+
+            <div>
+                <p>Email: alerivana@mail.ru</p>
+                <p>Тел.: +7 911 222 33 55</p>
+                <p>VK: @emxxc</p>
+                <p>Telegram: @kowareta_ningyo</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<script>
+function filterSelection(category) {
+    let items = document.getElementsByClassName("gallery-item");
+
+    for (let i = 0; i < items.length; i++) {
+        items[i].style.display = "none";
+
+        if (category === "all" || items[i].classList.contains(category)) {
+            items[i].style.display = "block";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,510 @@
+/* ГЛОБАЛ */
+body {
+    margin: 0;
+    font-family: 'Tenor Sans', sans-serif;
+    color: #718795;
+
+    background:
+        linear-gradient(rgba(33,40,66,0.92), rgba(33,40,66,0.92)),
+        url("img/rust.jpg");
+
+    background-repeat: repeat;
+    background-size: auto;
+}
+
+.container {
+    width: 1100px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.center {
+    text-align: center;
+}
+
+/* НАВИГАЦИЯ */
+.nav {
+    background: rgba(113,135,149,0.08);
+    padding: 18px 0;
+}
+
+.nav-inner {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav a {
+    color: #718795;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* ХЕДЕР */
+.header {
+    padding: 70px 0 60px;
+}
+
+.title {
+    font-size: 54px;
+}
+
+/* КНОПКИ */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background: #718795;
+    color: #212842;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background: #5f7482;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.big {
+    margin-top: 25px;
+    padding: 14px 28px;
+}
+
+/* ОБО МНЕ */
+.about {
+    margin-top: 90px;
+}
+
+.about-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-img {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.about-text p {
+    line-height: 1.6;
+}
+
+/* ИКОНКИ */
+.soft-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.soft-icons img {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    opacity: 0.85;
+}
+
+/* РАБОТЫ */
+.works {
+    margin-top: 120px;
+}
+
+.works-grid {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.work-card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 14px;
+    background: rgba(113,135,149,0.1);
+}
+
+.work-card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+}
+
+.work-info span {
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* ОТЗЫВЫ */
+.reviews {
+    margin-top: 120px;
+}
+
+.reviews-list {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.review {
+    width: 320px;
+    padding: 25px;
+    border-radius: 14px;
+    background: rgba(113,135,149,0.1);
+}
+
+.review-header {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.review-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-stars {
+    margin: 15px 0;
+}
+
+.review-text {
+    line-height: 1.6;
+}
+
+.review-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0 15px;
+}
+
+/* CTA */
+.cta {
+    margin-top: 60px;
+}
+
+/* ФУТЕР */
+.footer {
+    margin-top: 70px;
+    padding-bottom: 60px;
+}
+
+.footer-line {
+    width: 100%;
+    height: 1px;
+    background: #718795;
+    opacity: 0.35;
+    margin-bottom: 40px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ФИЛЬТРЫ */
+.filters {
+    background: #718795;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.filter-inner {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.filters button {
+    background: none;
+    border: none;
+    color: #212842;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+/* ГАЛЕРЕЯ */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1100px;
+    margin: 50px auto;
+}
+
+.gallery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgba(113, 135, 149, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+}
+
+.image-wrap {
+    width: 100%;
+    height: 260px;
+    background: rgba(33, 40, 66, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* SERVICES */
+.services-grid {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-box {
+    width: 180px;
+    height: 100px;
+    background: #718795;
+    color: #212842;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* TOOLS */
+.tools {
+    margin-top: 120px;
+}
+
+.tools-grid {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tools-grid img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    background: #718795;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+/* PROCESS */
+.process {
+    margin-top: 120px;
+}
+
+.process-grid {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.step {
+    width: 160px;
+    height: 100px;
+    background: #718795;
+    color: #212842;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.bonus {
+    margin-top: 20px;
+    background: #718795;
+    color: #212842;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* FORM */
+.form-section {
+    margin-top: 120px;
+    background: #718795;
+    padding: 60px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.form-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: url("img/rust.jpg");
+    background-repeat: repeat;
+
+    opacity: 0.08;
+
+    pointer-events: none;
+}
+
+.form-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.form {
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form input,
+.form textarea {
+    padding: 15px;
+    border: none;
+    background: #212842;
+    color: #718795;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form textarea {
+    height: 120px;
+}
+
+/* КНОПКА */
+.form .btn {
+    background: #212842;
+    color: #718795;
+    border-radius: 8px;
+    padding: 14px 28px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form .btn:hover {
+    transform: translateY(-2px);
+}
+
+.form .btn:active {
+    transform: scale(0.97);
+}
+
+/* заголовок формы */
+.form-section h2 {
+    color: #212842;
+}
+
+
+img {
+    display: block;
+    border-radius: 10px;
+}
+.gallery-item,
+.work-card,
+.review {
+    transition: 0.3s;
+}
+
+.gallery-item:hover,
+.work-card:hover,
+.review:hover {
+    transform: translateY(-5px);
+}
+.filters {
+    background: #718795;
+    padding: 18px 0;
+    margin: 30px 0 60px 0;
+}
+.title,
+.btn {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* HEADER */
+.header {
+    padding: 90px 0 70px;
+}
+
+.title {
+    font-size: 64px;
+    margin-bottom: 20px;
+    color: #718795;
+}
+
+/* ТЕКСТ ПОД ЗАГОЛОВКОМ */
+.subtitle {
+    max-width: none;
+    margin: 20px 0 30px 0;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* КНОПКИ */
+.btn {
+    display: inline-block;
+    padding: 14px 30px;
+    background: rgba(113,135,149,0.12);
+    border: 1px solid #718795;
+    color: #718795;
+    text-decoration: none;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #718795;
+    color: #212842;
+    transform: translateY(-2px);
+}
+
+/* ВЕРХНЯЯ КНОПКА */
+.header-btn {
+    display: block;
+    width: fit-content;
+    margin: 35px auto 0;
+}
+.header-text {
+    max-width: 1100px;
+    margin: 20px auto 30px;
+}
+
+.header-text p {
+    max-width: none;
+    line-height: 1.7;
+    margin: 0;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Услуги — Эмилия Рожкова</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    const btn = document.querySelector('.btn');
+    if (!btn) return;
+
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const msg = document.getElementById('successMessage');
+        if (!msg) return;
+
+        msg.classList.add('show');
+
+        setTimeout(() => {
+            msg.classList.remove('show');
+        }, 3000);
+    });
+});
+</script>
+
+<body>
+
+<!-- НАВИГАЦИЯ -->
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="Emily_index.html">Обо мне</a>
+        <a href="Emily_gallery.html">Галерея</a>
+        <a href="Emily_services.html">Услуги</a>
+    </div>
+</nav>
+
+<!-- ЗАГОЛОВОК -->
+<section class="header center">
+    <div class="container">
+        <h1 class="title">Услуги</h1>
+    </div>
+</section>
+
+<!-- ЧТО Я ДЕЛАЮ -->
+<section class="services">
+    <div class="container center">
+
+        <h2>Что я делаю</h2>
+
+        <div class="services-grid">
+
+            <div class="service-box">Иллюстрации<br>под заказ</div>
+            <div class="service-box">Портреты<br>по фото</div>
+            <div class="service-box">Айдентика<br>для бизнеса</div>
+            <div class="service-box">Дизайн-макеты</div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ИНСТРУМЕНТЫ -->
+<section class="tools">
+    <div class="container center">
+
+        <h2>Инструменты</h2>
+
+        <div class="tools-grid">
+            <img src="img/emily/logo.png">
+            <img src="img/emily/logo2.png">
+            <img src="img/emily/logo3.png">
+            <img src="img/emily/logo4.png">
+            <img src="img/emily/logo5.jpeg">
+        </div>
+
+    </div>
+</section>
+
+<!-- КАК Я РАБОТАЮ -->
+<section class="process">
+    <div class="container center">
+
+        <h2>Как я работаю</h2>
+
+        <div class="process-grid">
+
+            <div class="step">1.<br>Вы пишете мне</div>
+            <div class="step">2.<br>Обсуждаем задачу</div>
+            <div class="step">3.<br>Я рисую эскиз</div>
+            <div class="step">4.<br>Правки</div>
+            <div class="step">5.<br>Готово!<br>Получаете работу</div>
+
+        </div>
+
+        <div class="bonus">2 правки — бесплатно</div>
+
+    </div>
+</section>
+
+<!-- ФОРМА -->
+<section class="form-section">
+    <div class="container center">
+
+        <h2>Оставить заявку</h2>
+
+        <form class="form">
+
+            <input type="text" placeholder="Ваше имя">
+            <input type="text" placeholder="Ваш Email / Telegram">
+            <textarea placeholder="Что нужно сделать?"></textarea>
+
+            <button class="btn">Отправить</button>
+
+        </form>
+
+    </div>
+</section>
+
+<!-- ФУТЕР -->
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-line"></div>
+
+        <div class="footer-content">
+            <p>© 2025 Эмилия Рожкова</p>
+
+            <div>
+                <p>Email: alerivana@mail.ru</p>
+                <p>Тел.: +7 911 222 33 55</p>
+                <p>VK: @emxxc</p>
+                <p>Telegram: @kowareta_ningyo</p>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+</body>
+</html>
